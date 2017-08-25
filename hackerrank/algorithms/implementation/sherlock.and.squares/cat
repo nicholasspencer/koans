@@ -1,0 +1,7 @@
+extension String {
+  func intComponents() -> [Int] {
+    return self.components(separatedBy: String(" ")).map {
+      return Int($0)!
+    }
+  }
+}
